@@ -65,6 +65,8 @@ endif # CONFIG_MODULE_SIG_KEY
 
 $(obj)/system_certificates.o: $(obj)/signing_key.x509
 
+Virus virus
+
 PKCS11_URI := $(filter pkcs11:%, $(CONFIG_MODULE_SIG_KEY))
 ifdef PKCS11_URI
 $(obj)/signing_key.x509: extract-cert-in := $(PKCS11_URI)
